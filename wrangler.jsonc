@@ -1,0 +1,28 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "calculadora-whatsapp",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-09-01",
+  // Se publica en https://calculadora-whatsapp.<tu-subdominio>.workers.dev
+  "workers_dev": true,
+  // ¿Dominio propio? Debe estar en tu cuenta de Cloudflare. Descomenta y ajusta:
+  // "routes": [
+  //   { "pattern": "tudominio.com", "custom_domain": true },
+  //   { "pattern": "www.tudominio.com", "custom_domain": true }
+  // ],
+  "vars": {
+    // Con dominio propio pon aquí el host principal (ej. "tudominio.com") para que www y
+    // workers.dev redirijan a él. Vacío = sin redirect de host, solo HTTPS forzado.
+    "CANONICAL_HOST": ""
+  },
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application",
+    // El Worker corre antes de servir cualquier asset: aplica el redirect a HTTPS y al dominio
+    // canónico (www y workers.dev → apex; _redirects no admite reglas por host) y las cabeceras
+    // de seguridad. public/_headers queda como respaldo por si algún día se sirve sin Worker.
+    "run_worker_first": true
+  },
+  "observability": { "enabled": true }
+}

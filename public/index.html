@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calculadora del nuevo costo de WhatsApp API (1 de octubre de 2026)</title>
+  <meta name="description" content="Desde el 1 de octubre de 2026 Meta cobra cada respuesta que tu negocio envía por WhatsApp Business API. Calcula cuánto te costará según el país de tus clientes, con los 1,000 mensajes gratis por número y tres escenarios. Tarifas oficiales de Meta." />
+  <!-- Si publicas con dominio propio, agrega aquí <link rel="canonical"> y <meta property="og:url"> con tu URL. -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="¿Cuánto te va a costar responder por WhatsApp desde el 1 de octubre de 2026?" />
+  <meta property="og:description" content="Calculadora con las tarifas oficiales de Meta: 1,000 respuestas gratis al mes por número, tarifa según el país de tu cliente, tres escenarios. Explicado en español, sin tecnicismos." />
+  <meta property="og:locale" content="es_MX" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:," />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="./styles.css" />
+  <script type="application/ld+json" id="faq-jsonld"></script>
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="#inicio">Calculadora WhatsApp <span>· 1 oct 2026</span></a>
+  <nav aria-label="Secciones">
+    <a href="#calculadora">Calculadora</a>
+    <a href="#como-funciona">Cómo funciona</a>
+    <a href="#tarifas">Tarifas y reglas</a>
+    <a href="#preguntas">Preguntas</a>
+  </nav>
+  <span class="count mono" id="countdown"></span>
+</header>
+
+<main id="story">
+
+  <!-- 01 · Lo que cambia -->
+  <section class="sec light" data-flow-section id="inicio" aria-label="Lo que cambia">
+    <div class="sec-inner" data-flow-inner>
+      <div class="content">
+        <div class="sec-label"><span>01 — Lo que cambia</span><span>Datos oficiales de Meta</span></div>
+        <hr class="rule" />
+        <div class="hero-head">
+          <h1 class="hero-title">Responder por WhatsApp deja de ser gratis el 1 de octubre.</h1>
+          <img class="hero-logo" src="./img/whatsapp.svg" alt="Logo de WhatsApp" width="200" height="200" />
+        </div>
+        <hr class="rule" />
+        <div class="hero-foot">
+          <p class="lead">Meta empieza a cobrar cada respuesta que envías dentro de la ventana de 24 horas. Te regala 1,000 al mes por número; el resto se paga según el país de tu cliente. Calcula cuánto te toca, aunque no sepas tus números exactos.</p>
+          <div class="cta">
+            <a class="btn" href="#calculadora">Calcular mi costo <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
+            <a class="btn ghost" href="#como-funciona">Explícame el cambio</a>
+          </div>
+        </div>
+        <div class="facts">
+          <div class="fact"><div class="big">1,000</div><p>respuestas gratis al mes por cada número. Del 1,001 en adelante se cobran.</p></div>
+          <div class="fact"><div class="big">$0.0085</div><p>USD por respuesta a un cliente en México. A Colombia, $0.0008; a Perú, $0.03.</p></div>
+          <div class="fact"><div class="big">30 sep</div><p>límite para registrar método de pago o Meta deja de entregar tus respuestas.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 · Calculadora -->
+  <section class="sec soft" data-flow-section data-no-pin id="calculadora" aria-label="Calculadora">
+    <div class="sec-inner" data-flow-inner>
+      <div class="content narrow">
+        <div class="sec-label"><span>02 — Calculadora</span><span>Cuatro pasos · dos minutos</span></div>
+        <hr class="rule" />
+        <div class="calc-head">
+          <div>
+            <h2 class="sec-title"><img class="logo-sm" src="./img/whatsapp-mono.svg" alt="" width="36" height="36" />¿Cuánto te va a costar a ti?</h2>
+            <p class="lead">No necesitas saber cuántos mensajes mandas. Con cuántas personas hablas al mes es suficiente para una buena aproximación, y te damos tres escenarios.</p>
+          </div>
+          <img class="calc-art" src="./img/burbujas.jpg" alt="Ilustración 3D de dos burbujas de chat con una etiqueta de precio" width="1000" height="1000" loading="lazy" />
+        </div>
+        <div id="calc" aria-live="polite"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 · Cómo funciona -->
+  <section class="sec dark" data-flow-section id="como-funciona" aria-label="Cómo funciona">
+    <div class="sec-inner" data-flow-inner>
+      <div class="content">
+        <div class="sec-label"><span>03 — Cómo funciona</span><span>La ventana de 24 h y los 1,000 gratis</span></div>
+        <hr class="rule" />
+        <h2 class="sec-title">El cambio, explicado en tres ideas</h2>
+        <p class="lead">Hasta hoy, si un cliente te escribía, podías responderle gratis durante 24 horas. Eso es lo que cambia. La ventana sigue; lo gratis, no.</p>
+        <div class="cols">
+          <div class="col"><div class="num">01</div><h3>Cada respuesta se cobra</h3><p>Cuando un cliente te escribe se abre una ventana de 24 horas. Todo lo que tú le mandas ahí (texto, audio, foto, cada mensaje de tu chatbot o de tu agente de IA) es un <strong>mensaje de servicio</strong>. Antes eran gratis. Desde el 1 de octubre, Meta cobra cada uno que se entrega.</p></div>
+          <div class="col"><div class="num">02</div><h3>1,000 gratis al mes por número</h3><p>Cada número de WhatsApp Business recibe 1,000 mensajes de servicio gratis cada mes. Meta cobra a partir del 1,001. No se acumulan: si un mes usas 400, los otros 600 se pierden. Dos números son 2,000 gratis.</p></div>
+          <div class="col"><div class="num">03</div><h3>Pagas la tarifa del país del cliente</h3><p>El precio depende del código de país del número que recibe el mensaje, no de dónde está tu empresa. Un negocio en México que responde a un cliente en Brasil paga la tarifa de Brasil. En cada país, servicio cuesta lo mismo que utilidad y autenticación.</p></div>
+        </div>
+
+        <hr class="rule" style="margin-top:32px" />
+        <h3 class="sub-title">La ventana de 24 horas, paso a paso</h3>
+        <div class="timeline">
+          <div class="tl"><div class="t">Hora 0</div><h4>Un cliente te escribe</h4><p>Ese mensaje no te cuesta nada. Meta nunca cobra lo que recibes.</p><span class="badge free">Gratis</span></div>
+          <div class="tl"><div class="t">Se abre la ventana</div><h4>24 horas para responder libremente</h4><p>Texto, audio, fotos, botones, lo que sea. Cada mensaje nuevo del cliente reinicia las 24 horas.</p><span class="badge">Sin cambio</span></div>
+          <div class="tl"><div class="t">Dentro de las 24 h</div><h4>Cada respuesta tuya cuenta</h4><p>Antes: gratis. Ahora: un mensaje de servicio, cobrado a la tarifa del país del cliente. Los primeros 1,000 del mes, por número, van gratis.</p><span class="badge paid">Se cobra desde el 1 oct</span></div>
+          <div class="tl"><div class="t">Pasan 24 h sin respuesta del cliente</div><h4>Se cierra la ventana</h4><p>Solo puedes escribirle con plantillas aprobadas (utilidad, marketing, autenticación). Esas ya se cobraban y siguen igual.</p><span class="badge">Igual que hoy</span></div>
+        </div>
+
+        <hr class="rule" style="margin-top:32px" />
+        <div class="two">
+          <div>
+            <h3 class="sub-title">Los 1,000 gratis, con lupa</h3>
+            <ul class="rules">
+              <li><strong>Son por número de teléfono</strong>, no por cuenta ni por empresa. Tres números conectados a la API son 3,000 respuestas gratis al mes.</li>
+              <li><strong>Cuentan mensajes entregados</strong> que tú envías como respuesta libre dentro de la ventana. Los que el cliente te manda no cuentan y nunca se cobran.</li>
+              <li><strong>Se reinician cada mes.</strong> Lo que no uses se pierde; no se acumula.</li>
+              <li><strong>Solo aplican a mensajes de servicio.</strong> Las plantillas de utilidad, marketing y autenticación se cobran desde la primera.</li>
+              <li><strong>No hay descuentos por volumen</strong> en mensajes de servicio, aunque mandes millones. Utilidad y autenticación sí los tienen, a partir de 100,000 al mes.</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="sub-title">Lo que sigue gratis</h3>
+            <ul class="rules">
+              <li><strong>Los mensajes que recibes.</strong> Siempre.</li>
+              <li><strong>72 horas si el cliente llega desde un anuncio.</strong> Si te escribe desde un anuncio "clic a WhatsApp" o un botón de tu página de Facebook y respondes dentro de 24 h, se abre una ventana de 72 horas en la que todo lo que mandes, de cualquier tipo, es gratis.</li>
+              <li><strong>Tus primeras 1,000 respuestas del mes</strong> por cada número.</li>
+            </ul>
+            <p class="example"><span class="mono">Ejemplo</span> Una tienda en México con un número responde a 300 personas al mes, unas 6 veces cada una: 1,800 mensajes. Los primeros 1,000 son gratis. Paga 800 × $0.0085 = <strong>$6.80 USD al mes</strong>. Si fueran 150 personas (900 mensajes), pagaría $0.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 · Tarifas y reglas -->
+  <section class="sec light" data-flow-section id="tarifas" aria-label="Tarifas y reglas">
+    <div class="sec-inner" data-flow-inner>
+      <div class="content">
+        <div class="sec-label"><span>04 — Tarifas y reglas</span><span>Rate card oficial · vigente 1 oct 2026</span></div>
+        <hr class="rule" />
+        <h2 class="sec-title">Lo que cuesta cada respuesta, país por país</h2>
+        <p class="lead">Tarifas oficiales de Meta en USD, vigentes a partir del 1 de octubre de 2026. La tarifa de servicio es igual a la de utilidad y autenticación en cada mercado. Los países que no aparecen por nombre se cobran con la tarifa de su región.</p>
+
+        <div class="two rates">
+          <div>
+            <h3 class="sub-title">Mercados más consultados</h3>
+            <div class="table-wrap"><table id="rates-top"></table></div>
+          </div>
+          <div>
+            <h3 class="sub-title">Los 47 mercados de Meta</h3>
+            <details class="full">
+              <summary>Ver la tabla completa, de la tarifa más baja a la más alta</summary>
+              <div class="table-wrap"><table id="rates-table"></table></div>
+            </details>
+            <p class="note">Meta publica estas mismas tarifas en 15 monedas locales (MXN, COP, ARS, CLP, PEN, BRL, EUR y otras). La calculadora las usa cuando tu negocio está en uno de esos países. Meta puede actualizar tarifas el 1 de enero, abril, julio y octubre.</p>
+          </div>
+        </div>
+
+        <hr class="rule" style="margin-top:32px" />
+        <h3 class="sub-title">Antes y después: qué se cobra y qué no</h3>
+        <div class="table-wrap">
+          <table class="compare">
+            <thead><tr><th>Tipo de mensaje</th><th>Hasta el 30 de septiembre</th><th>Desde el 1 de octubre de 2026</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Servicio</strong>: respuestas libres dentro de la ventana de 24 h (persona, chatbot o IA de terceros)</td><td>Gratis</td><td>Se cobra por mensaje. 1,000 gratis al mes por número.</td></tr>
+              <tr><td><strong>Utilidad</strong> dentro de la ventana de 24 h (confirmación de pedido, aviso de envío)</td><td>Gratis</td><td>Se cobra a la tarifa de utilidad.</td></tr>
+              <tr><td><strong>Utilidad</strong> fuera de la ventana</td><td>Se cobra</td><td>Igual</td></tr>
+              <tr><td><strong>Marketing</strong> (promociones)</td><td>Se cobra</td><td>Igual. En México sube de $0.0305 a $0.0397 USD.</td></tr>
+              <tr><td><strong>Autenticación</strong> (códigos de verificación)</td><td>Se cobra</td><td>Igual</td></tr>
+              <tr><td><strong>Meta Business Agent</strong> (el agente de IA de Meta)</td><td>Se cobra por token desde el 1 de agosto</td><td>Igual: $2 USD por millón de tokens, unos 4 a 5 centavos por mensaje.</td></tr>
+              <tr><td>Cualquier mensaje dentro de las <strong>72 h</strong> tras un anuncio "clic a WhatsApp" o botón de Facebook</td><td>Gratis</td><td>Gratis</td></tr>
+              <tr><td>Mensajes que el <strong>cliente te envía</strong></td><td>Gratis</td><td>Gratis</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <hr class="rule" style="margin-top:32px" />
+        <h3 class="sub-title">Reglas y detalles que debes considerar</h3>
+        <div class="tips">
+          <div class="tip"><h4>Fecha límite: 30 de septiembre de 2026</h4><p>Si tu cuenta de WhatsApp Business (o la de tu proveedor) no tiene un método de pago registrado, Meta dejará de entregar tus mensajes de servicio el 1 de octubre, aunque estés por debajo de los 1,000 gratis.</p></div>
+          <div class="tip"><h4>Tu proveedor puede cobrar extra</h4><p>Wati, YCloud, Twilio, 360dialog y similares pagan estas tarifas a Meta y pueden sumar su margen o una cuota mensual. Revisa su lista de precios; aquí solo está lo de Meta.</p></div>
+          <div class="tip"><h4>Menos mensajes, más completos</h4><p>Se cobra por mensaje entregado, no por letras. Cinco burbujas seguidas cuestan cinco veces más que un mensaje bien escrito. Revisa tu chatbot: muchos flujos mandan tres o cuatro donde bastaría uno.</p></div>
+          <div class="tip"><h4>Quédate por debajo de 1,000 si puedes</h4><p>Si respondes menos de 1,000 mensajes al mes por número, sigues pagando $0. Para un negocio chico, ese es el objetivo.</p></div>
+          <div class="tip"><h4>Usa anuncios "clic a WhatsApp"</h4><p>Las conversaciones que nacen de un anuncio o de un botón de Facebook tienen 72 horas de mensajes gratis, de cualquier tipo.</p></div>
+          <div class="tip"><h4>Mide antes del 1 de octubre</h4><p>En la analítica de precios de Meta (o en el panel de tu proveedor), la categoría <span class="mono">SERVICE</span> te dice cuántos mensajes de servicio entregaste este mes. Ese es tu número real para la calculadora.</p></div>
+          <div class="tip"><h4>Moneda de facturación</h4><p>Meta factura en USD o en la moneda local de tu cuenta (MXN, COP, ARS, CLP, PEN, BRL, EUR…) con su propio rate card en esa moneda. La calculadora te muestra ambas.</p></div>
+          <div class="tip"><h4>Revisa a qué países respondes</h4><p>Responder a Colombia cuesta $0.0008 USD; a Perú, $0.03. Es 37 veces más. Si atiendes varios países, la mezcla importa más que el volumen.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 · Preguntas y fuentes -->
+  <section class="sec dark" data-flow-section id="preguntas" aria-label="Preguntas y fuentes">
+    <div class="sec-inner" data-flow-inner>
+      <div class="content">
+        <div class="sec-label"><span>05 — Preguntas y fuentes</span><span>Cuando difieren, manda Meta</span></div>
+        <hr class="rule" />
+        <h2 class="sec-title">Lo que todos preguntan</h2>
+        <div class="faq" id="faq"></div>
+
+        <hr class="rule" style="margin-top:32px" />
+        <h3 class="sub-title" id="fuentes">De dónde salen estos números</h3>
+        <p class="lead">Todas las tarifas y reglas de esta página vienen de la documentación oficial de Meta. Las guías de otras plataformas ayudan a entenderlo; cuando difieren de Meta, manda Meta.</p>
+        <div class="sources">
+          <div>
+            <h4>Oficial · Meta</h4>
+            <ul>
+              <li><a href="https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing" target="_blank" rel="noopener">Precios en la plataforma de WhatsApp Business</a><span>Reglas generales, calendario de precios, rate cards en 16 monedas (CSV y PDF) y códigos de país por mercado.</span></li>
+              <li><a href="https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing#updates-to-rate-cards" target="_blank" rel="noopener">Actualizaciones de tarifas vigentes el 1 de octubre de 2026</a><span>Incluye el nivel gratis de 1,000 mensajes de servicio por número y las tarifas de servicio por mercado.</span></li>
+              <li><a href="https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing/non-template-messages" target="_blank" rel="noopener">Próximas actualizaciones de precios: servicio, utilidad y Meta Business Agent</a><span>Cómo cobra Meta cada categoría, ejemplos de cobro y la fecha límite del método de pago.</span></li>
+              <li><a href="https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing#country-calling-codes" target="_blank" rel="noopener">Códigos de país y regiones de precios</a><span>Qué países caen en "Resto de Latinoamérica", "Resto de África", etc.</span></li>
+              <li><a href="https://business.whatsapp.com/products/platform-pricing" target="_blank" rel="noopener">Sitio de precios de WhatsApp Business</a><span>Tabla interactiva de tarifas por país y moneda.</span></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Explicaciones de otras plataformas</h4>
+            <ul>
+              <li><a href="https://www.ycloud.com/es/blog/whatsapp-api-message-pricing-update-effective-october-1-2026" target="_blank" rel="noopener">YCloud: Actualización de precios de la API de WhatsApp, 1 de octubre de 2026</a><span>En español. Cambios de tarifa por país y el nivel gratis por número.</span></li>
+              <li><a href="https://sendpulse.com/blog/whatsapp-service-message-pricing" target="_blank" rel="noopener">SendPulse: WhatsApp service message pricing changes</a><span>Ejemplos de cálculo y qué mensajes cuentan para el nivel gratis.</span></li>
+              <li><a href="https://www.wati.io/en/blog/whatsapp-service-message-pricing/" target="_blank" rel="noopener">Wati: WhatsApp service message pricing explained</a><span>Qué es un mensaje de servicio y cómo cambia el cobro. Ojo: no menciona los 1,000 gratis, que sí están en la fuente oficial.</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="rule" style="margin-top:32px" />
+        <footer>
+          <p>Esta calculadora es una estimación hecha con el rate card oficial de Meta vigente a partir del 1 de octubre de 2026 (publicado el 1 de septiembre de 2026). No es asesoría de Meta ni de ningún proveedor. Los montos en moneda local salen del rate card de Meta en esa moneda y aplican si tu cuenta factura en ella. Como Meta no publica en qué orden descuenta los 1,000 mensajes gratis, aquí se reparten en proporción entre países.</p>
+          <p>Proyecto de código abierto (MIT): <a href="https://github.com/santmun/calculadora-whatsapp-api" target="_blank" rel="noopener">código en GitHub</a>. Banderas: <a href="https://github.com/lipis/flag-icons" target="_blank" rel="noopener">flag-icons</a> (MIT). Animación: GSAP. Última revisión de tarifas: 5 de septiembre de 2026.</p>
+          <p>WhatsApp y su logo son marcas de Meta Platforms, Inc. Este sitio es independiente y no está afiliado a Meta ni a WhatsApp.</p>
+        </footer>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script type="module" src="./app.js"></script>
+<script src="./vendor/gsap.min.js" defer></script>
+<script src="./vendor/ScrollTrigger.min.js" defer></script>
+<script src="./scroll.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+node_modules/
+.wrangler/
+.dev.vars
+.env*
+design/calculadora-whatsapp-rediseno.html
+.DS_Store
